@@ -17,7 +17,7 @@ Or pretty-print JSON from a file:
 More usage:
 
     >> jpp -h                                                                                                                                    benton.porter@bhollis-mbpro
-    Usage: jsonpp [options] file
+    Usage: jpp [options] file
         -s, --sort                       Sort json alphabetically by key
         -v, --version                    Show version
 
