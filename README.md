@@ -18,6 +18,7 @@ More usage:
 
     >> jpp -h                                                                                                                                    benton.porter@bhollis-mbpro
     Usage: jpp [options] file
+        -i, --indent N                   Number of spaces to indent (default: 2) 
         -s, --sort                       Sort json alphabetically by key
         -v, --version                    Show version
 
