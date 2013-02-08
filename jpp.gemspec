@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors       = ['Ben Porter']
   s.email         = 'benton.porter@gmail.com'
   s.files         = ['bin/jpp', 'ext/hash.rb', 'lib/jpp.rb', 'README.md']
-  s.require_paths = ['lib']
+  s.require_paths = ['ext', 'lib']
   s.executables   = 'jpp'
   s.add_dependency 'json'
 end

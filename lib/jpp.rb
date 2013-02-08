@@ -1,6 +1,6 @@
 require 'json'
 require 'optparse'
-require 'ext/hash'
+require 'hash'
 
 class Jpp
   VERSION = '0.1'
