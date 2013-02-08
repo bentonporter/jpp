@@ -9,7 +9,7 @@ class Jpp
     options = {}
 
     parser = OptionParser.new do |opts|
-      opts.banner = 'Usage: jsonpp [options] file'
+      opts.banner = 'Usage: jpp [options] file'
 
       opts.on('-s', '--sort', 'Sort json alphabetically by key') do |s|
         options[:sort] = s
