@@ -4,7 +4,7 @@ require 'ostruct'
 require 'hash'
 
 class Jpp
-  VERSION = '0.2'
+  VERSION = '1.0.0'
 
   def main()
     # Set default values
