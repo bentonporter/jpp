@@ -30,11 +30,3 @@ You currently have to clone the repo and build/install the gem.
     git clone git@github.com:bentonporter/jpp.git
     cd jpp
     gem build jpp.gemspec && gem install jpp-0.1.gem
-
-
-Todos
------
-- Push gem to RubyGems
-
-
-
