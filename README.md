@@ -25,7 +25,13 @@ More usage:
 Install
 -------
 
-You currently have to clone the repo and build/install the gem. 
+    gem install jpp
+    
+    
+Contribute
+----------
+
+To build and run locally:
 
     git clone git@github.com:bentonporter/jpp.git
     cd jpp
