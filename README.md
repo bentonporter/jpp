@@ -35,4 +35,4 @@ To build and run locally:
 
     git clone git@github.com:bentonporter/jpp.git
     cd jpp
-    gem build jpp.gemspec && gem install jpp-0.1.gem
+    gem build jpp.gemspec && gem install jpp-0.2.gem
