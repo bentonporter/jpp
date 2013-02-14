@@ -16,7 +16,7 @@ Or pretty-print JSON from a file:
     
 More usage:
 
-    >> jpp -h                                                                                                                                    benton.porter@bhollis-mbpro
+    >> jpp -h
     Usage: jpp [options] file
         -i, --indent N                   Number of spaces to indent (default: 2) 
         -s, --sort                       Sort json alphabetically by key
