@@ -1,5 +1,5 @@
 require 'test/unit'
-require 'hash'
+require_relative '../ext/hash'
 
 class TestHash < Test::Unit::TestCase
 
