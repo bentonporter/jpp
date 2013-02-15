@@ -1,5 +1,6 @@
+$:.unshift File.expand_path("../ext", __FILE__)
 require 'test/unit'
-require_relative '../ext/hash'
+require 'hash'
 
 class TestHash < Test::Unit::TestCase
 
