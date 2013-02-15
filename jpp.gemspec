@@ -1,4 +1,4 @@
-require File.expand_path("../lib/version", __FILE__)
+require File.expand_path("../lib/jpp/version", __FILE__)
 
 Gem::Specification.new do |s|
   s.name          = 'jpp'
@@ -12,5 +12,5 @@ Gem::Specification.new do |s|
   s.require_paths = ['ext', 'lib']
   s.executables   = 'jpp'
   s.add_dependency 'json'
-  s.files = Dir['Rakefile', '{bin,ext,lib,test}/**/*', 'README*', 'LICENSE*'] & `git ls-files -z`.split("\0")
+  s.files = Dir['Rakefile', '{bin,ext,lib,test}/**/*', 'README*', 'LICENSE*']
 end
