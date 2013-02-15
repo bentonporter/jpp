@@ -11,6 +11,8 @@ Gem::Specification.new do |s|
   s.email         = 'benton.porter@gmail.com'
   s.require_paths = ['ext', 'lib']
   s.executables   = 'jpp'
+  s.files         = Dir['Rakefile', '{bin,ext,lib,test}/**/*', 'README*', 'LICENSE*']
+  
   s.add_dependency 'json'
-  s.files = Dir['Rakefile', '{bin,ext,lib,test}/**/*', 'README*', 'LICENSE*']
+  s.add_development_dependency 'rake'
 end
