@@ -39,31 +39,31 @@ class TestHash < Test::Unit::TestCase
 
   def test_that_it_sorts_nested_hashes
     orig = {
-      :b => 5,
-      :a => {
-        'bbb' => 1,
-        'aaa' => 9
+      'bob' => 5,
+      'anne' => {
+        'fred' => 1,
+        'catherine' => 9
       }
     }
 
     sorted = orig.sort_by_key
-    assert_equal [:a, :b], sorted.keys
-    assert_equal ['aaa', 'bbb'], sorted[:a].keys
+    assert_equal ['anne', 'bob'], sorted.keys
+    assert_equal ['catherine', 'fred'], sorted['anne'].keys
   end
 
   # This is not currently supported, so might as well verify the expected behavior
   def test_that_hashes_inside_an_array_are_not_sorted
     orig = {
-      :b => 5,
-      :a => [{
-        'bbb' => 1,
-        'aaa' => 9
+      'horse' => 5,
+      'frog' => [{
+        'zebra' => 1,
+        'lion' => 9
       }]
     }
 
     sorted = orig.sort_by_key
-    assert_equal [:a, :b], sorted.keys
-    assert_equal ['bbb', 'aaa'], sorted[:a].first.keys
+    assert_equal ['frog', 'horse'], sorted.keys
+    assert_equal ['zebra', 'lion'], sorted['frog'].first.keys
   end
 
 end
