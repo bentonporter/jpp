@@ -5,7 +5,6 @@ require 'hash'
 class TestHash < Test::Unit::TestCase
 
   def test_that_it_sorts_strings
-    puts $LOAD_PATH
     orig = {
       'zoo' => 1,
       'apple' => 2,
@@ -13,7 +12,7 @@ class TestHash < Test::Unit::TestCase
     }
 
     sorted = orig.sort_by_key
-    assert_equal sorted.keys, ['apple', 'pizza', 'zoo']
+    assert_equal ['apple', 'pizza', 'zoo'], sorted.keys
   end
 
   def test_that_it_sorts_integers
@@ -24,7 +23,7 @@ class TestHash < Test::Unit::TestCase
     }
 
     sorted = orig.sort_by_key
-    assert_equal sorted.keys, [1, 3, 4]
+    assert_equal [1, 3, 4], sorted.keys
   end
 
   def test_that_it_sorts_special_chars
@@ -35,7 +34,7 @@ class TestHash < Test::Unit::TestCase
     }
 
     sorted = orig.sort_by_key
-    assert_equal sorted.keys, ['aaa', 'zzz', '~ccc']
+    assert_equal ['aaa', 'zzz', '~ccc'], sorted.keys
   end
 
   def test_that_it_sorts_nested_hashes
