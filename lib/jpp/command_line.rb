@@ -8,6 +8,7 @@ module Jpp
       options = OpenStruct.new
       options.indent = 2
       options.sort = false
+      options.version = false
 
       parser = OptionParser.new do |opts|
         opts.banner = 'Usage: jpp [options] file'
@@ -21,8 +22,7 @@ module Jpp
         end
 
         opts.on('-v', '--version', 'Show version') do |v|
-          puts VERSION
-          exit
+          options.version = v
         end
       end
 

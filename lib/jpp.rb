@@ -6,6 +6,12 @@ module Jpp
   class Jpp
     def main()
       options = CommandLine.parse(ARGV)
+      
+      if (options.version) 
+        puts VERSION
+        exit
+      end
+
       input = JSON.load(ARGF.read)
       input = input.sort_by_key() if options.sort  # TODO make sure input is a hash before calling sort_by_key
       output = JSON.pretty_generate(input, :indent => ' ' * options.indent)
