@@ -1,10 +1,11 @@
-$:.unshift File.expand_path("../ext", __FILE__)
+$:.unshift File.expand_path("../../ext", __FILE__)
 require 'test/unit'
 require 'hash'
 
 class TestHash < Test::Unit::TestCase
 
   def test_that_it_sorts_strings
+    puts $LOAD_PATH
     orig = {
       'zoo' => 1,
       'apple' => 2,
